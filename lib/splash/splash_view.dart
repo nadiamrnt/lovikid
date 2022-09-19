@@ -22,7 +22,7 @@ class _SplashViewState extends State<SplashView> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-        height: double.infinity,
+        height: MediaQuery.of(context).size.height,
         child: Image.asset(
           "assets/splash_screen.png",
           fit: BoxFit.cover,

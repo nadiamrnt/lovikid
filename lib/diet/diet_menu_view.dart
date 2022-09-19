@@ -13,7 +13,7 @@ class DietMenuView extends GetView {
       body: Stack(
         children: [
           SizedBox(
-            height: double.infinity,
+            height: MediaQuery.of(context).size.height,
             child: Image.asset(
               "assets/home.png",
               fit: BoxFit.cover,
@@ -23,7 +23,7 @@ class DietMenuView extends GetView {
             child: Padding(
                 padding: const EdgeInsets.fromLTRB(16, 80, 16, 16),
                 child: SizedBox(
-                  height: double.infinity,
+                  height: MediaQuery.of(context).size.height,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [

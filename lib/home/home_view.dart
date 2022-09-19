@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:lovikid/calculator/calculator_view.dart';
 import 'package:lovikid/diet/diet_menu_view.dart';
 import 'package:lovikid/interpretasi_gfr/interpretasi_view.dart';
 import 'package:lovikid/themes/app_colors.dart';
@@ -14,7 +15,7 @@ class HomeView extends GetView {
       body: Stack(
         children: [
           SizedBox(
-            height: double.infinity,
+            height: MediaQuery.of(context).size.height,
             child: Image.asset(
               "assets/home.png",
               fit: BoxFit.cover,
@@ -47,7 +48,9 @@ class HomeView extends GetView {
                       buildMenu(
                         image: "calc",
                         title: "Calculator ",
-                        onTap: () {},
+                        onTap: () {
+                          Get.toNamed(CalculatorView.route);
+                        },
                       ),
                       const SizedBox(
                         width: 40,

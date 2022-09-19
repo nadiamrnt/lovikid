@@ -1,3 +1,4 @@
+import 'package:lovikid/calculator/calculator_route.dart';
 import 'package:lovikid/diet/diet_route.dart';
 import 'package:lovikid/home/home_route.dart';
 import 'package:lovikid/interpretasi_gfr/interpretasi_route.dart';
@@ -12,5 +13,6 @@ class AppPages {
     ...homeRoute,
     ...interpretasiRoute,
     ...dietRoute,
+    ...calculatorRoute,
   ];
 }

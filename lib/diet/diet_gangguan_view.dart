@@ -12,7 +12,7 @@ class DietGangguanView extends GetView {
       body: Stack(
         children: [
           SizedBox(
-            height: double.infinity,
+            height: MediaQuery.of(context).size.height,
             child: Image.asset(
               "assets/home.png",
               fit: BoxFit.cover,
