@@ -24,14 +24,14 @@ class CalculatorController extends GetxController {
   void cekGFR() {
     int usia = int.parse(usiaCtr.text);
     int bb = int.parse(bbCtr.text);
-    int serum = int.parse(serumCtr.text);
+    double serum = double.parse(serumCtr.text);
 
     if (lk.isTrue) {
-      interValue.value = (140 - usia) * bb * (1) / 72 * serum;
+      interValue.value = ((140 - usia) * bb * (1)) / (72 * serum);
     }
 
     if (pr.isTrue) {
-      interValue.value = (140 - usia) * bb * (0.85) / 72 * serum;
+      interValue.value = ((140 - usia) * bb * (0.85)) / (72 * serum);
     }
   }
 }
